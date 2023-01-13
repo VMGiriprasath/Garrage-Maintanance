@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        app:navigationIcon="@drawable/back_arrow"
+        app:title="Items"
+        app:titleTextColor="@color/black" />
+
+    <TextView
+        android:id="@+id/des1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Item Description"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/itemdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="For Eg : Tyre"
+        android:layout_below="@id/des1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/black"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/des2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemdescription"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Quantity"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des2"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/black"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/des3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Final Price"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/finalprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des3"
+        android:hint="Price of Single Item"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/black"
+        android:inputType="number" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addmorebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/finalprice"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_shape"
+        android:text="Add Item to Bill"
+        android:textAllCaps="false"
+        android:onClick="addtobill"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:backgroundTint="@color/red" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finishbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addmorebtn"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_shape"
+        android:onClick="finishaddingitem"
+        android:text="Finish "
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:backgroundTint="@color/red" />
+</RelativeLayout>

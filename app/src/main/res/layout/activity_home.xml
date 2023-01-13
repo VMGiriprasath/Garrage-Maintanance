@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        app:title="Home"
+        app:titleTextColor="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/makebill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_shape"
+        android:text="Bills"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:backgroundTint="@color/red" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/makebill"
+        android:layout_margin="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_shape"
+        android:text="Stock Availability"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:backgroundTint="@color/red" />
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        app:navigationIcon="@drawable/back_arrow"
+        app:title="Customer Details" />
+
+    <EditText
+        android:id="@+id/customernameet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:hint="Customer Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/mobilenumberet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customernameet"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"
+        android:maxLength="10"
+        android:hint="Mobile Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/bikeregnoet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobilenumberet"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:hint="Bike Register No"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/bikemake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bikeregnoet"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:hint="Bike Make"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/bikemodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bikemake"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:hint="Bike Model"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/kilometers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bikemodel"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"
+        android:hint="Kilometers"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/instaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kilometers"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:hint="Insta Id"
+        android:inputType="text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instaid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/red"
+        android:text="Next"
+        android:onClick="addcustomer"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+/>
+</RelativeLayout>

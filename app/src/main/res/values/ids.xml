@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bill_edit_id" type="id" />
+    <item name="bill_edit_item_description" type="id" />
+    <item name="bill_edit_final_price" type="id" />
+    <item name="bill_edit_quantity" type="id" />
+</resources>
